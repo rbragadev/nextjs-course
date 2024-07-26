@@ -10,6 +10,7 @@ import {
 import { NavbarList } from './NavbarList';
 import { NavbarListItemLink } from './NavbarListItemLink';
 import { NavbarListItemButton } from './NavbarListItemButton';
+import Image from 'next/image';
 
 type NavbarProps = React.ComponentProps<'nav'>;
 
@@ -22,9 +23,11 @@ export const Navbar = ({ className, ...props }: NavbarProps) => {
       )}
     >
       <div className="flex items-center justify-center my-4">
-        <img
+        <Image
           src="https://emersonbroga.com/e/assets/emersonbroga-logo-name-pink.png"
           alt="logo"
+          width={112}
+          height={32}
           className="w-auto h-12 p-2"
         />
       </div>
